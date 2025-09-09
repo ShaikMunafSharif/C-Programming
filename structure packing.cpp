@@ -1,0 +1,12 @@
+#include <stdio.h>
+#pragma pack(1)
+struct abc {
+	char a;
+	int b;
+	float c;
+};
+int main() {
+	struct abc s;
+	printf("%d",sizeof(s));
+	return 0;
+}
