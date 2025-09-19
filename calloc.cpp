@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	// int a[30];
+	int n,i,*ptr;
+	printf("Enter total no of values: ");
+	scanf("%d",&n);
+	ptr=(int*)calloc(n,sizeof(int));
+	/*printf("\nEnter the values: ");
+	for(i=0;i<n;i++) {
+		scanf("%d",(ptr+i)); */
+	printf("The entered values are: ");
+	for(i=0;i<n;i++) {
+		printf("%d\t",*(ptr+i));
+	}
+	free(ptr);
+	return 0;
+}
